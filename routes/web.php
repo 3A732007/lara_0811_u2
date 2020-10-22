@@ -37,6 +37,11 @@ use Illuminate\Support\Facades\Route;
     return 'Hello,'.$name;
 });
 */
+/*
 Route::get('hello/{name?}',function($name='Everybody'){
+    return'Hello,'.$name;
+});
+*/
+Route::get('hello/{name1?}',function($name='Everyone'){
     return'Hello,'.$name;
 });
