@@ -42,6 +42,11 @@ Route::get('hello/{name?}',function($name='Everybody'){
     return'Hello,'.$name;
 });
 */
+/*
 Route::get('hello/{name1?}',function($name='Everyone'){
     return'Hello,'.$name;
 });
+*/
+Route::get('hello/{name?}', function ($name='Everybody') {
+    return 'Hello, '.$name;
+})->name('hello.index');
